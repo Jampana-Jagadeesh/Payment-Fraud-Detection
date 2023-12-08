@@ -1,0 +1,51 @@
++-------------------+        +-------------------------+         +-------------------------+
+|    Load Dataset   |        |  Check for Missing Data |         |   Train Isolation Forest|
++-------------------+        +-------------------------+         +-------------------------+
+           |                            |                                   |
+           |                            |                                   |
+           v                            v                                   |
++-------------------+        +-------------------------+         +-------------------------+
+|    Display Info   |        | Impute Missing Values   |         |   Predict Outliers/      |
+|  (Dataset Shape,  |        |   (Replace NaN with Mean)|         |Fraudulent Transactions  |
+|   Data Structure) |        +-------------------------+         |                         |
++-------------------+                            |                 +-------------------------+
+           |                                     |                                    |
+           v                                     v                                    |
++-------------------+                            +------------------+                 |
+|   Drop 'User ID'  |                            | Normalize Data   |                 |
+|      Column       |                            |  (if necessary)  |                 |
++-------------------+                            +------------------+                 |
+           |                                     |                                    |
+           v                                     v                                    |
++-------------------+                 +-------------------------+                    |
+|  Visualize Data   |                 |  Train-Test Splitting   |                    |
+| (Countplot, KDE,  |                 |     (80% Train, 20% Test) |                    |
+|   Boxplot, etc.)  |                 +-------------------------+                    |
++-------------------+                                 |                              |
+           |                                          v                              |
+           |                                  +------------------+                 |
+           v                                  | Evaluate Model   |                 |
++-------------------+                          |  Performance     |                 |
+|   Convert 'Gender'|                          |  (Classification |                 |
+| to Dummy Variables|                          |     Report)      |                 |
++-------------------+                          +------------------+                 |
+           |                                          |                              |
+           v                                          v                              |
++-------------------+                          +-------------------------+          |
+|    Boxplot of 'Age'|                          |   Visualize Anomaly    |          |
+|   and 'Salary'    |                          |   Scores Over Time    |          |
++-------------------+                          |   (Scatter Plot)      |          |
+                                              +-------------------------+          |
+                                                           |                       |
+                                                           v                       |
+                                              +-------------------------+          |
+                                              |   Additional Visualize  |          |
+                                              |   (Histogram, Box Plot,  |          |
+                                              |    Violin Plot)         |          |
+                                              +-------------------------+          |
+                                                           |                       |
+                                                           v                       |
+                                              +-------------------------+          |
+                                              |   Pair Plot of Relevant |          |
+                                              |    Variables            |          |
+                                              +-------------------------+          |
