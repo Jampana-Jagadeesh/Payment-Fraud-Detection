@@ -1,0 +1,34 @@
+Sure, let's break down the provided code into a step-by-step algorithm:
+
+### Algorithm for Anomaly Detection using Isolation Forest
+
+**Step 1: Load and Preprocess Data**
+- Load the financial dataset from a CSV file.
+- Check for missing values in the dataset.
+- Impute missing values using the mean of the respective feature (e.g., 'Amount').
+- Normalize the data, if necessary.
+
+**Step 2: Train Isolation Forest Model**
+- Initialize an Isolation Forest model with a contamination rate of 1% to identify potential anomalies.
+- Train the Isolation Forest model on the preprocessed dataset.
+
+**Step 3: Predict Anomalies**
+- Predict outliers/fraudulent transactions using the trained Isolation Forest model.
+- Create a new column, 'Fraudulent,' to store the predicted labels (-1 for potential fraud, 1 for normal transactions).
+
+**Step 4: Feature Engineering**
+- Optionally, perform feature engineering. In the provided code, a new feature 'TransactionHour' is created based on the 'Timestamp.'
+
+**Step 5: Analyze and Visualize Results**
+- Identify potential fraudulent transactions by filtering rows where 'Fraudulent' is -1.
+- Print a summary of monthly spending for June based on transaction type.
+- Split the dataset into training and test sets.
+- Suppress warnings to improve readability.
+- Evaluate the model's performance on the test set using classification report metrics.
+
+**Step 6: Visualize Anomaly Scores Over Time**
+- Convert the 'Timestamp' to datetime format.
+- Generate anomaly scores for each transaction using the decision function of the Isolation Forest model.
+- Create a scatter plot to visualize anomaly scores over time, differentiating between normal and potential fraudulent transactions.
+
+**Step 7: Visualize Anomaly
