@@ -1,7 +1,5 @@
-Certainly! Below is a template for a `README.md` file that you can use to document the code you provided:
-
-```markdown
 # Financial Anomaly Detection
+[Googel Cobal File](https://colab.research.google.com/drive/1jtVqiNJ6e0VVu2O0YVhnFuxb25EMIX_A?usp=sharing)
 
 This repository contains a Python script for financial anomaly detection using the Isolation Forest algorithm. The script includes data loading, preprocessing, model training, and evaluation steps.
 
@@ -57,12 +55,5 @@ pip install pandas scikit-learn matplotlib seaborn
 
 Clone the repository and run the Python script. Make sure to have the required libraries installed.
 
-```bash
-python ****.py
-```
 
 Feel free to customize the script or extend it based on your specific requirements.
-
-```
-
-You can save this content as a `README.md` file in the root of your project repository. Adjust the details based on additional information or context specific to your project.
