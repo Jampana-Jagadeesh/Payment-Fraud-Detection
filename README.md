@@ -1,4 +1,4 @@
-# Financial Anomaly Detection
+# Real Time Financial Anomaly Detection
 [Googel Cobal File](https://colab.research.google.com/drive/1jtVqiNJ6e0VVu2O0YVhnFuxb25EMIX_A?usp=sharing)
 
 This repository contains a Python script for financial anomaly detection using the Isolation Forest algorithm. The script includes data loading, preprocessing, model training, and evaluation steps.
@@ -10,17 +10,15 @@ The financial anomaly dataset is stored in 'financial_anomaly_data.csv'. It cont
 ## Prerequisites
 
 Make sure you have the following libraries installed:
-
-- `pandas`
-- `scikit-learn`
-- `matplotlib`
-- `seaborn`
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
 
 You can install them using:
-
-```bash
+bash
 pip install pandas scikit-learn matplotlib seaborn
-```
+
 
 ## Steps
 
